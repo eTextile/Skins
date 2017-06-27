@@ -1,3 +1,4 @@
 # PureData
 
-http://l2ork.music.vt.edu/main/make-your-own-l2ork/software/#install-dev
+Purr Data - Jonathan Wilkes' cross-platform Pd-l2ork version
+https://agraef.github.io/purr-data/
