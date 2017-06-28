@@ -24,7 +24,7 @@
 #X obj 151 23 del 200;
 #X obj 151 144 unpackOSC;
 #X obj 151 122 udpreceive 7771;
-#X obj 151 166 OSCroute /sensors /dsp /volume /threshold;
+#X obj 151 166 routeOSC /sensors /dsp /volume /threshold;
 #X connect 0 0 1 0;
 #X connect 1 0 14 0;
 #X connect 2 0 0 1;
