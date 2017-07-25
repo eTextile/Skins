@@ -1,4 +1,4 @@
-#N canvas 202 54 1073 694 10;
+#N canvas 202 24 1073 694 10;
 #X obj 183 518 *~;
 #X obj 406 455 line~;
 #X text 609 136 PITCH SHIFTER;
@@ -14,13 +14,13 @@
 #X obj 120 570 cos~;
 #X obj 120 597 *~;
 #X obj 120 626 +~;
-#X obj 207 477 wrap~;
+#X obj 257 505 wrap~;
 #X obj 452 520 *~;
 #X obj 452 553 +~;
 #X obj 389 580 cos~;
 #X obj 389 607 *~;
 #X obj 247 356 t b f;
-#X obj 207 450 +~ 0.5;
+#X obj 257 478 +~ 0.5;
 #X obj 120 518 -~ 0.5;
 #X obj 120 544 *~ 0.5;
 #X obj 389 519 -~ 0.5;
@@ -49,7 +49,7 @@ from the first one \, is computed using the "wrap" object.;
 the two delay line outputs. They each traverse the positive half of
 the cosine waveform (phase -0.25 to +0.25) over the time the phase
 goes from one end to the other.;
-#X obj 120 476 phasor~;
+#X obj 120 439 phasor~;
 #X text 710 509 updated for Pd version 0.37-1;
 #X obj 515 476 max 1.5;
 #X text 518 382 delay;
@@ -58,7 +58,7 @@ goes from one end to the other.;
 #X text 156 425 rotation freq;
 #X obj 12 15 inlet~;
 #X obj 203 52 inlet;
-#X obj 265 53 inlet;
+#X obj 259 53 inlet;
 #X obj 203 104 nbx 3 10 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 9
 -262144 -1 -1 0 256 0;
 #X obj 203 123 nbx 4 10 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 9
@@ -67,7 +67,6 @@ goes from one end to the other.;
 #X obj 183 570 vd~ \$0-pit;
 #X obj 452 582 vd~ \$0-pit;
 #X obj 63 231 delwrite~ \$0-pit 5000;
-#X msg 452 101 100;
 #X obj 317 104 tgl 10 0 empty empty empty 17 7 0 10 -257985 -1 -1 1
 1;
 #N canvas 690 191 450 300 drywet 0;
@@ -94,10 +93,7 @@ goes from one end to the other.;
 0;
 #X obj 246 125 cnv 10 10 10 empty empty window_(ms) 0 6 0 8 -262144
 -191407 0;
-#X obj 317 53 loadbang;
-#X obj 452 75 loadbang;
-#X obj 108 52 r SHIFTING;
-#X obj 108 73 r WINDOW;
+#X obj 317 53 inlet;
 #X connect 0 0 11 0;
 #X connect 1 0 0 1;
 #X connect 1 0 16 1;
@@ -136,19 +132,15 @@ goes from one end to the other.;
 #X connect 38 0 8 0;
 #X connect 41 0 6 0;
 #X connect 41 0 3 0;
-#X connect 43 0 54 0;
+#X connect 43 0 53 0;
 #X connect 44 0 46 0;
 #X connect 45 0 47 0;
 #X connect 46 0 27 0;
 #X connect 47 0 41 0;
 #X connect 49 0 13 1;
 #X connect 50 0 19 1;
-#X connect 52 0 47 0;
-#X connect 53 0 54 1;
-#X connect 54 0 48 0;
-#X connect 54 1 51 0;
-#X connect 58 0 53 0;
-#X connect 59 0 52 0;
-#X connect 60 0 46 0;
-#X connect 61 0 47 0;
+#X connect 52 0 53 1;
+#X connect 53 0 48 0;
+#X connect 53 1 51 0;
+#X connect 57 0 52 0;
 #X coords 0 -1 1 1 130 60 1 200 80;
