@@ -3,7 +3,7 @@
 #X declare -lib Gem;
 #X declare -lib hcs;
 #X obj 36 338 hsl 128 15 0 100 0 0 master-volume master-volume-set
-master-volume 8 8 0 12 -262144 -1 -1 10930 1;
+master-volume 8 8 0 12 -262144 -1 -1 11430 1;
 #X obj 36 228 bng 15 250 50 0 render-plot empty Plot 17 7 0 12 -203904
 -1 -1;
 #X obj 36 248 bng 15 250 50 0 reset-axes empty Reset 17 7 0 12 -204786
@@ -522,7 +522,7 @@ master-volume 8 8 0 12 -262144 -1 -1 10930 1;
 #X obj 36 373 hsl 128 15 0.05 1 0 0 mouse-radius mouse-radius-set mouse-radius
 8 8 0 12 -262144 -1 -1 3342 1;
 #X obj 36 268 tgl 15 0 mouseover-on mouseover-on-set Mouseover 17 7
-0 12 -262144 -1 -1 1 1;
+0 12 -262144 -1 -1 0 1;
 #X obj 36 396 hsl 128 15 0.03 0.25 0 0 point-size empty point-size
 8 8 0 12 -262144 -1 -1 0 1;
 #N canvas 30 87 507 474 rotate 0;
@@ -834,13 +834,13 @@ BFCC1 BFCC2 BFCC3 BFCC4 BFCC5 BFCC6 BFCC7;
 0;
 #X obj 1 21 cnv 10 10 400 empty empty empty 20 12 0 14 -233017 -66577
 0;
-#X floatatom 355 404 5 0 0 1 offset-x zoom-control-x-offset-set zoom-control-x-offset
+#X floatatom 357 404 5 0 0 1 offset-x zoom-control-x-offset-set zoom-control-x-offset
 , f 5;
-#X floatatom 355 424 5 0 0 1 offset-y zoom-control-y-offset-set zoom-control-y-offset
+#X floatatom 357 424 5 0 0 1 offset-y zoom-control-y-offset-set zoom-control-y-offset
 , f 5;
-#X floatatom 246 404 5 0 0 1 zoom-x zoom-control-x-range-set zoom-control-x-range
+#X floatatom 248 404 5 0 0 1 zoom-x zoom-control-x-range-set zoom-control-x-range
 , f 5;
-#X floatatom 246 424 5 0 0 1 zoom-y zoom-control-y-range-set zoom-control-y-range
+#X floatatom 248 424 5 0 0 1 zoom-y zoom-control-y-range-set zoom-control-y-range
 , f 5;
 #N canvas 62 72 538 589 init 0;
 #X obj 43 34 loadbang;
@@ -1782,7 +1782,7 @@ level. You can also use the [openpanel] buttons at right >>>>>>;
 #X restore 194 103 pd analysis;
 #X text 279 103 <<<<< START HERE;
 #X obj 36 208 tgl 15 0 render-on render-on-set GEM-render 17 7 0 12
--262144 -1 -1 1 1;
+-262144 -1 -1 0 1;
 #N canvas 48 23 545 565 grain-info-display 0;
 #X symbolatom 14 35 30 0 0 2 file-name grain-info-file-name-set -,
 f 30;
@@ -1894,7 +1894,7 @@ f 10;
 -1 -1;
 #X text 323 195 <<<<< More mapping options;
 #X text 34 464 timbreID - William Brent 2012;
-#N canvas 67 237 681 374 players 1;
+#N canvas 67 237 681 374 players 0;
 #X obj 282 308 dac~;
 #X obj 280 191 *~;
 #X obj 391 -31 r master-volume;
@@ -1998,6 +1998,6 @@ f 10;
 #X connect 32 0 29 0;
 #X restore 36 143 pd players;
 #X obj 36 83 osc_input 7771;
-#X obj 216 372 s LOAD;
-#X msg 215 349 ./medias/Sound/wekidFabrics/mono/*.wav;
+#X obj 247 362 s LOAD;
+#X msg 246 339 ./medias/Sound/wekidFabrics/mono/*.wav;
 #X connect 34 0 33 0;

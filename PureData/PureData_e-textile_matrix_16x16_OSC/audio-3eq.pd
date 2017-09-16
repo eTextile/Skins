@@ -46,7 +46,7 @@
 #X obj 424 125 initbang;
 #X obj 409 177 route bass medium treeble mix;
 #X obj 409 101 inlet command;
-#N canvas 1 85 450 300 GGEE_filter 0;
+#N canvas 220 256 450 300 GGEE_filter 0;
 #X obj 67 239 outlet~;
 #X obj 65 134 biquad~;
 #X obj 66 154 biquad~;
@@ -89,7 +89,7 @@
 #X connect 15 0 10 0;
 #X connect 17 0 16 0;
 #X restore 185 264 pd GGEE_filter;
-#X obj 279 240 initbang;
+#X obj 278 240 initbang;
 #X msg 279 263 1;
 #X text 111 107 // from 3-band EQ \, derek at umatic.nl;
 #X obj 375 314 initbang;
