@@ -34,7 +34,6 @@
 #X msg 321 395 send /sensors \$1 \$2 \$3 \$4 \$5;
 #X obj 167 332 t l l;
 #X msg 275 198 \; volume \$1 \;;
-#X obj 296 199 print VOLUME;
 #X connect 0 0 1 0;
 #X connect 1 0 13 0;
 #X connect 2 0 0 1;
@@ -59,7 +58,6 @@
 #X connect 22 0 24 0;
 #X connect 22 1 3 0;
 #X connect 22 2 34 0;
-#X connect 22 2 35 0;
 #X connect 22 3 14 0;
 #X connect 24 0 0 0;
 #X connect 24 1 1 1;

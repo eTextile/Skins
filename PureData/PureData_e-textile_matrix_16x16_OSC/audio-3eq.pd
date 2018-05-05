@@ -1,5 +1,5 @@
 #N canvas 365 141 750 461 10;
-#N canvas 396 246 528 469 output_mixer 0;
+#N canvas 395 144 528 397 output_mixer 1;
 #X obj 39 11 inlet dry/wet;
 #X obj 22 -19 inlet~ dry;
 #X obj 248 -19 inlet~ bass;
