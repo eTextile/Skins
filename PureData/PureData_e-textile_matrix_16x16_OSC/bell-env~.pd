@@ -1,28 +1,28 @@
-#N canvas 782 39 308 540 10;
-#X obj 170 212 exp~;
-#X obj 135 247 *~;
-#X obj 340 -37 vsl 15 128 -5 -100 0 0 empty empty empty 0 -9 0 10 -257985
+#N canvas 589 122 455 570 10;
+#X obj 131 381 exp~;
+#X obj 96 416 *~;
+#X obj 305 132 vsl 15 128 -5 -100 0 0 empty empty empty 0 -9 0 10 -257985
 -1 -1 0 1;
-#X obj 170 188 *~;
-#X floatatom 307 183 5 0 0 0 - - -, f 5;
-#X obj 284 -49 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 131 357 *~;
+#X floatatom 305 321 5 0 0 0 - - -, f 5;
+#X obj 249 120 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 6700 1;
+#X msg 148 130 0;
+#X obj 305 286 mapping/curve -0.14;
+#X obj 95 172 line~;
+#X obj 268 44 oscilloscope;
+#X obj 226 311 vsl 15 128 0 10 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X msg 183 -39 0;
-#X obj 291 147 mapping/curve -0.14;
-#X obj 130 3 line~;
-#X obj 303 -125 oscilloscope;
-#X obj 261 142 vsl 15 128 0 10 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X floatatom 269 282 5 0 0 0 - - -, f 5;
-#X floatatom 261 104 5 0 0 0 - - -, f 5;
-#X msg 130 -39 1 3000;
-#X obj 129 -124 inlet;
-#X obj 130 -74 t b b f;
-#X obj 136 353 outlet~;
-#X msg 242 56 4.5;
-#X msg 220 231 4.5;
-#X obj 136 282 *~ 4.5;
-#X obj 130 92 *~ 4.5;
+#X floatatom 234 451 5 0 0 0 - - -, f 5;
+#X floatatom 226 273 5 0 0 0 - - -, f 5;
+#X msg 95 130 1 3000;
+#X obj 94 45 inlet;
+#X obj 95 95 t b b f;
+#X obj 97 522 outlet~;
+#X msg 207 225 4.5;
+#X msg 185 400 4.5;
+#X obj 97 451 *~ 4.5;
+#X obj 95 261 *~ 4.5;
 #X connect 0 0 1 1;
 #X connect 1 0 19 0;
 #X connect 2 0 7 0;
